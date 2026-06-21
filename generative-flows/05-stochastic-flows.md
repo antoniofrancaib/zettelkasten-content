@@ -199,3 +199,12 @@ The drift-based perspective — learning a drift for a fixed-noise SDE — conne
 - [Albergo, Boffi, and Vanden-Eijnden (2023)](https://arxiv.org/abs/2303.08797) — Stochastic Interpolants: A Unifying Framework for Flows and Diffusions
 - [Tzen and Raginsky (2019)](https://arxiv.org/abs/1905.09883) — Neural Stochastic Differential Equations: Deep Latent Gaussian Models in the Diffusion Limit
 - [Dockhorn, Vahdat, and Kreis (2022)](https://arxiv.org/abs/2112.07068) — Score-Based Generative Modeling with Critically-Damped Langevin Diffusion
+- [Song and Ermon (2019) — NCSN](https://arxiv.org/abs/1907.05600) — Generative Modeling by Estimating Gradients of the Data Distribution
+- [Song and Ermon (2020) — NCSNv2](https://arxiv.org/abs/2006.09011) — Improved Techniques for Training Score-Based Generative Models
+- [Anderson (1982)](https://doi.org/10.1016/0304-4149(82)90051-5) — Reverse-Time Diffusion Equation Models
+- [Berner, Richter, and Ullrich (2022)](https://arxiv.org/abs/2211.01364) — An Optimal Control Perspective on Diffusion-Based Generative Modeling
+- [Ma, Davis, Azizzadenesheli et al. (2024) — SiT](https://arxiv.org/abs/2401.08740) — Scalable Interpolant Transformers
+- [Roberts and Rosenthal (1998)](https://doi.org/10.1111/1467-9868.00123) — Optimal Scaling of Discrete Approximations to Langevin Diffusions
+- [Wu, Trippe, Naesseth, Blei, and Cunningham (2023)](https://arxiv.org/abs/2306.17775) — Practical and Asymptotically Exact Conditional Sampling in Diffusion Models
+- [Li, Wong, Chen, and Duvenaud (2020)](https://arxiv.org/abs/2001.01328) — Scalable Gradients for Stochastic Differential Equations
+- [Nelson (1967)](https://doi.org/10.1103/PhysRev.150.1079) — Dynamical Theories of Brownian Motion

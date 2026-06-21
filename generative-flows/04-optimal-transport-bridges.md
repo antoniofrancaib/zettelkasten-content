@@ -364,3 +364,21 @@ The connection between Schrödinger bridges and iterative proportional fitting w
 - [Vargas, Nüsken, and Richter (2021)](https://arxiv.org/abs/2106.04379) — Solving Schrödinger Bridges via Maximum Likelihood
 - [Liu, Gat, Polyak, et al. (2023)](https://arxiv.org/abs/2303.07845) — I²SB: Image-to-Image Schrödinger Bridge
 - [Shi, De Bortoli, Campbell, and Doucet (2024)](https://arxiv.org/abs/2309.01099) — Diffusion Schrödinger Bridge Matching
+- [Brenier (1991)](https://doi.org/10.1002/cpa.3160440402) — Polar Factorization and Monotone Rearrangement of Vector-Valued Functions
+- [McCann (1997)](https://doi.org/10.1006/aima.1997.1630) — A Convexity Principle for Interacting Gases
+- [Benamou and Brenier (2000)](https://doi.org/10.1007/s002110050002) — A Computational Fluid Mechanics Solution to the Monge-Kantorovich Mass Transfer Problem
+- [Otto (2001)](https://doi.org/10.1080/03605300108821973) — The Geometry of Dissipative Evolution Equations: The Porous Medium Equation
+- [Villani (2003)](https://doi.org/10.1090/gsm/058) — Topics in Optimal Transportation
+- [Villani (2008)](https://doi.org/10.1007/978-3-540-71050-9) — Optimal Transport: Old and New
+- [Pooladian, Ben-Hamu, Domingo-Enrich, Amos, Lipman, and Chen (2023)](https://arxiv.org/abs/2304.14772) — Multisample Flow Matching: Straightening Flows with Minibatch Couplings
+- [Liu (2022)](https://arxiv.org/abs/2209.03003) — Flow Straight and Fast: Learning to Generate and Transfer Data with Rectified Flow
+- [Albergo, Boffi, and Vanden-Eijnden (2023)](https://arxiv.org/abs/2303.08797) — Stochastic Interpolants: A Unifying Framework for Flows and Diffusions
+- [Léonard (2014)](https://arxiv.org/abs/1308.0215) — A Survey of the Schrödinger Problem and Some of its Connections with Optimal Transport
+- [Chen, Conforti, and Georgiou (2021)](https://arxiv.org/abs/2005.10963) — Stochastic Control Liaisons: Richard Sinkhorn Meets Gaspard Monge on a Schrödinger Bridge
+- [Peluchetti (2023)](https://arxiv.org/abs/2304.00675) — Diffusion Bridge Mixture Transports, Schrödinger Bridge Problems and Generative Modeling
+- [Huang, Jiao, Shi, and Kang (2021)](https://arxiv.org/abs/2106.03769) — Schrödinger-Föllmer Sampler: Sampling without Ergodicity
+- [Chen and Lipman (2024)](https://arxiv.org/abs/2302.03660) — Flow Matching on General Geometries
+- [Deming and Stephan (1940)](https://doi.org/10.1214/aoms/1177731829) — On a Least Squares Adjustment of a Sampled Frequency Table When the Expected Marginal Totals are Known
+- [Föllmer (1988)](https://doi.org/10.1007/BFb0086180) — Random Fields and Diffusion Processes
+- [Tabak and Vanden-Eijnden (2010)](https://doi.org/10.4310/CMS.2010.v8.n1.a1) — Density Estimation by Dual Ascent of the Log-Likelihood
+- [Tabak and Turner (2013)](https://doi.org/10.1002/cpa.21423) — A Family of Nonparametric Density Estimation Algorithms

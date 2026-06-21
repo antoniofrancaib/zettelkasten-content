@@ -234,8 +234,15 @@ The arc of this literature — from DDIM's empirical discovery to the theoretica
 
 ## References
 
-- [Song, Meng, and Ermon (ICLR 2021)](https://arxiv.org/abs/2010.02502) — Denoising Diffusion Implicit Models
+- [Song, Meng, and Ermon (ICLR 2021)](https://arxiv.org/abs/2010.02502) — Denoising Diffusion Implicit Models (DDIM)
 - [Liu, Gong, and Liu (ICLR 2023)](https://arxiv.org/abs/2209.03003) — Flow Straight and Fast: Learning to Generate and Transfer Data with Rectified Flow
 - [Salimans and Ho, ICLR 2022](https://arxiv.org/abs/2202.00512) — Progressive Distillation for Fast Sampling of Diffusion Models
 - [Song, Dhariwal, Chen, and Sutskever, ICML 2023](https://arxiv.org/abs/2303.01469) — Consistency Models
 - [Song and Dhariwal, NeurIPS 2023](https://arxiv.org/abs/2310.14189) — Improved Consistency Training
+- [Lu, Zhou, Bao, Chen, Li, and Zhu (NeurIPS 2022) — DPM-Solver](https://arxiv.org/abs/2206.00927) — DPM-Solver: A Fast ODE Solver for Diffusion Probabilistic Model Sampling in Around 10 Steps
+- [DPM-Solver++ (Lu et al.)](https://arxiv.org/abs/2211.01095) — DPM-Solver++: Fast Solver for Guided Sampling of Diffusion Probabilistic Models
+- [Liu, Ren, Lin, and Zhao (ICLR 2022) — PNDM](https://arxiv.org/abs/2202.09778) — Pseudo Numerical Methods for Diffusion Models on Manifolds
+- [Esser, Kulal, Blattmann et al. (2024) — Stable Diffusion 3](https://arxiv.org/abs/2403.03206) — Scaling Rectified Flow Transformers for High-Resolution Image Synthesis
+- [Black Forest Labs (2024) — Flux](https://github.com/black-forest-labs/flux) — FLUX.1 Generative Models
+- [Frans, Hafner, Levine, and Abbeel (2025) — Shortcut Models](https://arxiv.org/abs/2410.12557) — One Step Diffusion via Shortcut Models
+- [Yang, Tang, and Gong (2025) — Consistency Flow Matching](https://arxiv.org/abs/2407.02398) — Consistency Flow Matching: Defining Straight Flows with Velocity Consistency

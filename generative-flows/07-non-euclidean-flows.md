@@ -388,10 +388,25 @@ This universality reflects a single abstract principle: the Kolmogorov equation 
 
 ## References
 
-- [Austin, Johnson, Ho & Barber (2021)](https://arxiv.org/abs/2107.03006) — Structured Denoising Diffusion Models in Discrete State-Spaces
-- [Lou, Meng & Ermon (2023)](https://arxiv.org/abs/2310.16834) — Discrete Diffusion Modeling by Estimating the Ratios of the Data Distribution
-- [Gat, Remez, Shaul, Kreuk, Chen, Synnaeve, Adi, and Lipman (NeurIPS 2024)](https://arxiv.org/abs/2407.15595) — Discrete Flow Matching
+- [Austin, Johnson, Ho & Barber (NeurIPS 2021)](https://arxiv.org/abs/2107.03006) — Structured Denoising Diffusion Models in Discrete State-Spaces (D3PM)
+- [Lou, Meng & Ermon (ICML 2024)](https://arxiv.org/abs/2310.16834) — Discrete Diffusion Modeling by Estimating the Ratios of the Data Distribution (SEDD)
 - [Campbell, Benton, De Bortoli, Rainforth, Deligiannidis, and Doucet (NeurIPS 2022)](https://arxiv.org/abs/2205.14987) — A Continuous Time Framework for Discrete Denoising Models
+- [Gat, Remez, Shaul, Kreuk, Chen, Synnaeve, Adi, and Lipman (NeurIPS 2024)](https://arxiv.org/abs/2407.15595) — Discrete Flow Matching
+- [Campbell, Yim, Barzilay, Jaakkola, and Gat (NeurIPS 2024)](https://arxiv.org/abs/2406.04329) — Generative Flows on Discrete State-Spaces: Enabling Multimodal Flows with Applications to Protein Co-Design
+- [Hoogeboom, Nielsen, Jaini, Forré, and Welling (NeurIPS 2021)](https://arxiv.org/abs/2102.05379) — Argmax Flows and Multinomial Diffusion
+- [Sahoo et al. (2024) — MDLM](https://arxiv.org/abs/2406.07524) — Simple and Effective Masked Diffusion Language Models
+- [Shi et al. (2024)](https://arxiv.org/abs/2405.02236) — Simplified and Generalized Masked Diffusion for Discrete Data
+- [Uria et al. (2014)](https://arxiv.org/abs/1310.1757) — A Deep and Tractable Density Estimator
+- [Yang et al. (2019) — XLNet](https://arxiv.org/abs/1906.08237) — XLNet: Generalized Autoregressive Pretraining for Language Understanding
 - [Chen and Lipman's 'Flow Matching on General Geometries' (ICLR 2024, outstanding paper)](https://arxiv.org/abs/2302.03660) — Flow Matching on General Geometries
+- [De Bortoli, Thornton, Heng, and Doucet (NeurIPS 2022)](https://arxiv.org/abs/2202.02763) — Riemannian Score-Based Generative Modelling
+- [Huang, Aghajohari, Bose, Panangaden, and Courville (NeurIPS 2022)](https://arxiv.org/abs/2208.07949) — Riemannian Diffusion Models
+- [Pooladian, Ben-Hamu, Domingo-Enrich, Amos, Lipman, and Chen (2023) — Riemannian OT](https://arxiv.org/abs/2304.14772) — Multisample Flow Matching: Straightening Flows with Minibatch Couplings
+- [Yim, Trippe, De Bortoli, Mathieu, Doucet, Barzilay, and Jaakkola (ICML 2023)](https://arxiv.org/abs/2302.02277) — SE(3) Diffusion Model with Application to Protein Backbone Generation (FrameDiff)
+- [Bose, Akhound-Sadegh, Huguet, Wolf, Rekesh, Su, Zhang, Bengio, Bhatt, Lee, Tong, Hamilton, and Bronstein (NeurIPS 2023) — FoldFlow](https://arxiv.org/abs/2310.02391) — SE(3)-Stochastic Flow Matching for Protein Backbone Generation
+- [Huguet, Vuckovic, Fatras, Tong, Sun, Wolf, Bronstein, Tazi, and Bengio (2024) — FoldFlow-2](https://arxiv.org/abs/2406.03163) — FoldFlow-2: Improving Protein Backbone Generation with Flow Matching
+- [Abramson et al. (Nature 2024) — AlphaFold-3](https://doi.org/10.1038/s41586-024-07487-w) — Accurate Structure Prediction of Biomolecular Interactions with AlphaFold 3
+- [Watson, Juergens, et al. (Nature 2023) — RFdiffusion](https://doi.org/10.1038/s41586-023-06415-8) — De Novo Design of Protein Structure and Function with RFdiffusion
 - [TorsionalDiffusion (Jing, Corso, Chang, Barzilay, Jaakkola, ICLR 2023)](https://arxiv.org/abs/2210.01776) — Torsional Diffusion for Molecular Conformations
 - [Stark, Jing, Wang, Geiger, Barzilay, Jaakkola (ICML 2024)](https://arxiv.org/abs/2402.05841) — Dirichlet Flow Matching with Applications to DNA Sequence Design
+- [Holderrieth, Yim, and Jaakkola (2024/2025) — Generator Matching](https://arxiv.org/abs/2409.11399) — Generator Matching: Generative Modeling with Arbitrary Markov Processes

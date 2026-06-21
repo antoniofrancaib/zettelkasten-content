@@ -386,6 +386,33 @@ Conditional flow matching was developed as a natural extension of the flow match
 
 - [Dhariwal and Nichol (2021)](https://arxiv.org/abs/2105.05233) — Diffusion Models Beat GANs on Image Synthesis
 - [Ho and Salimans (2022)](https://arxiv.org/abs/2207.12598) — Classifier-Free Diffusion Guidance
-- [Chung, Kim, Mccann, Klasky, and Ye (2023)](https://arxiv.org/abs/2209.14687) — Diffusion Posterior Sampling for General Noisy Inverse Problems
+- [Chung, Kim, Mccann, Klasky, and Ye (2023)](https://arxiv.org/abs/2209.14687) — Diffusion Posterior Sampling for General Noisy Inverse Problems (DPS)
 - [Ramesh et al. (2022)](https://arxiv.org/abs/2204.06125) — Hierarchical Text-Conditional Image Generation with CLIP Latents (DALL-E 2)
 - [Lipman et al. (ICLR 2023)](https://arxiv.org/abs/2210.02747) — Flow Matching for Generative Modeling
+- [Song, Sohl-Dickstein, Kingma, Kumar, Ermon, and Poole (2021)](https://arxiv.org/abs/2011.13456) — Score-Based Generative Modeling through Stochastic Differential Equations
+- [Karras, Aittala, Aila, and Laine (2022)](https://arxiv.org/abs/2206.00364) — Elucidating the Design Space of Diffusion-Based Generative Models
+- [Saharia et al. (2022) — Imagen](https://arxiv.org/abs/2205.11487) — Photorealistic Text-to-Image Diffusion Models with Deep Language Understanding
+- [Rombach et al. (2022) — Stable Diffusion](https://arxiv.org/abs/2112.10752) — High-Resolution Image Synthesis with Latent Diffusion Models
+- [Salimans and Ho (2022)](https://arxiv.org/abs/2202.00512) — Progressive Distillation for Fast Sampling of Diffusion Models
+- [Midgley, Stimper, Simm, Schölkopf, and Hernández-Lobato (2023) — FAB](https://arxiv.org/abs/2208.01893) — Flow Annealed Importance Sampling Bootstrap
+- [Wu, Trippe, Naesseth, Blei, and Cunningham (2023)](https://arxiv.org/abs/2306.17775) — Practical and Asymptotically Exact Conditional Sampling in Diffusion Models
+- [Cardoso, Idrissi, Rector-Brooks, Bengio, and Malkin (2024)](https://arxiv.org/abs/2308.07983) — Monte Carlo Guided Diffusion for Bayesian Linear Inverse Problems
+- [Dou and Song (2024)](https://arxiv.org/abs/2306.14408) — Diffusion Posterior Sampling with Learned Twisting
+- [Richter, Berner, and Liu (2024)](https://arxiv.org/abs/2307.01198) — Improved Sampling via Learned Diffusions
+- [Black et al. (2024) — DDPO](https://arxiv.org/abs/2305.13301) — Training Diffusion Models with Reinforcement Learning
+- [Clark et al. (2024) — DRaFT](https://arxiv.org/abs/2309.12425) — Directly Fine-Tuning Diffusion Models on Differentiable Rewards
+- [Kawar, Elad, Ermon, and Song (2022) — DDRM](https://arxiv.org/abs/2201.11793) — Denoising Diffusion Restoration Models
+- [Liu, Karalias, Rempel, and Fidler (2022) — Composable Diffusion](https://arxiv.org/abs/2206.01714) — Compositional Visual Generation with Composable Diffusion Models
+- [Berner, Richter, Seidl, and Ullrich (2024)](https://arxiv.org/abs/2211.01364) — An Optimal Control Perspective on Diffusion-Based Generative Modeling
+- [Song, Shen, Xing, and Ermon (2022)](https://arxiv.org/abs/2111.08005) — Solving Inverse Problems in Medical Imaging with Score-Based Generative Models
+- [Neal (2001)](https://arxiv.org/abs/physics/9803008) — Annealed Importance Sampling
+- [Del Moral, Doucet, and Jasra (2006)](https://doi.org/10.1111/j.1467-9868.2006.00553.x) — Sequential Monte Carlo Samplers
+- [Crooks (2000)](https://doi.org/10.1103/PhysRevE.61.2361) — Path-Ensemble Averages in Systems Driven Far from Equilibrium
+- [Yim et al. (2023) — FrameFlow](https://arxiv.org/abs/2310.05297) — Fast Protein Backbone Generation with SE(3) Flow Matching
+- [Jing et al. (2024) — AlphaFold 3 diffusion](https://doi.org/10.1038/s41586-024-07487-w) — Accurate Structure Prediction of Biomolecular Interactions with AlphaFold 3
+- [Bradley (2024)](https://arxiv.org/abs/2408.09000) — Classifier-Free Guidance is a Predictor-Corrector
+- [Xu et al. (2024) — Imagereward](https://arxiv.org/abs/2304.05977) — ImageReward: Learning and Evaluating Human Preferences for Text-to-Image Generation
+- [Kynkäänniemi, Karras, Laine, Lehtinen, and Aila (2024)](https://arxiv.org/abs/2404.09987) — The Role of Classifier-Free Guidance in Machine Learning
+- [Fleming and Soner (2006)](https://doi.org/10.1007/0-387-31071-1) — Controlled Markov Processes and Viscosity Solutions
+- [Gordon, Salmond, and Smith (1993)](https://doi.org/10.1049/ip-f-2.1993.0015) — Novel Approach to Nonlinear/Non-Gaussian Bayesian State Estimation
+- [Tong et al. (2024)](https://arxiv.org/abs/2302.05872) — Improving and Generalizing Flow-Matching

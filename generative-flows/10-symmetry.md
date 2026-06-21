@@ -162,7 +162,22 @@ The projection approach to constraint manifolds builds on the SHAKE and RATTLE a
 ## References
 
 - [Cohen and Welling (2016)](https://arxiv.org/abs/1602.07576) — Group Equivariant Convolutional Networks
+- [Thomas, Smidt, Kearnes, Yang, Li, Kohlhoff, and Riley (2018)](https://arxiv.org/abs/1802.08219) — Tensor Field Networks: Rotation- and Translation-Equivariant Neural Networks for 3D Point Clouds
+- [Satorras, Hoogeboom, and Welling (2021) — EGNN](https://arxiv.org/abs/2102.09844) — E(n) Equivariant Graph Neural Networks
 - [Köhler, Klein, and Noé (2020)](https://arxiv.org/abs/2006.02425) — Equivariant Flows: Exact Likelihood Generative Learning for Symmetric Densities
-- [Hoogeboom, Satorras, Vignac, and Welling (2022)](https://arxiv.org/abs/2203.17003) — Equivariant Diffusion for Molecule Generation in 3D
-- [Bose, Akhound-Sadegh, Huguet, Wolf, Rekesh, Su, Zhang, Bengio, Bhatt, Lee, Tong, Hamilton, and Bronstein (NeurIPS 2023)](https://arxiv.org/abs/2310.02391) — SE(3)-Stochastic Flow Matching for Protein Backbone Generation
+- [Hoogeboom, Satorras, Vignac, and Welling (2022) — EDM](https://arxiv.org/abs/2203.17003) — Equivariant Diffusion for Molecule Generation in 3D
+- [Bose, Akhound-Sadegh, Huguet et al. (NeurIPS 2023) — FoldFlow](https://arxiv.org/abs/2310.02391) — SE(3)-Stochastic Flow Matching for Protein Backbone Generation
 - [Greydanus, Dzamba, and Sotelo (2019)](https://arxiv.org/abs/1906.01563) — Hamiltonian Neural Networks
+- [Cranmer, Greydanus, Hoyer et al. (2020)](https://arxiv.org/abs/2003.04630) — Lagrangian Neural Networks
+- [Finzi, Wang, and Wilson (2020)](https://arxiv.org/abs/2002.12880) — Generalizing Convolutional Neural Networks for Equivariance to Lie Groups on Arbitrary Continuous Data
+- [Rozen, Grover, Nickel, and Lipman (2021)](https://arxiv.org/abs/2108.08052) — Moser Flow: Divergence-Based Generative Modeling on Manifolds
+- [Lou, Lim, Katsman, Huang, Jiang, Lim, and De Sa (2020)](https://arxiv.org/abs/2006.10254) — Neural Manifold Ordinary Differential Equations
+- [Chen, Zhang, Arjovsky, and Bottou (2020)](https://arxiv.org/abs/1909.13334) — Symplectic Recurrent Neural Networks
+- [Toth, Rezende, Jaegle, Racanière, Botev, and Higgins (2020)](https://arxiv.org/abs/1909.13789) — Hamiltonian Generative Networks
+- [Ryckaert, Ciccotti, and Berendsen (1977) — SHAKE](https://doi.org/10.1016/0021-9991(77)90098-5) — Numerical Integration of the Cartesian Equations of Motion of a System with Constraints
+- [Andersen (1983) — RATTLE](https://doi.org/10.1016/0021-9991(83)90014-1) — Rattle: A Velocity Version of the Shake Algorithm for Molecular Dynamics Calculations
+- [SchNet (Schütt et al.)](https://arxiv.org/abs/1706.08566) — SchNet: A Continuous-Filter Convolutional Neural Network for Modeling Quantum Interactions
+- [DimeNet (Klicpera et al.)](https://arxiv.org/abs/2003.03123) — Directional Message Passing for Molecular Graphs
+- [PaiNN (Schütt et al.)](https://arxiv.org/abs/2102.03150) — Equivariant Message Passing for the Prediction of Tensorial Properties and Molecular Spectra
+- [MACE (Batatia et al.)](https://arxiv.org/abs/2206.07697) — MACE: Higher Order Equivariant Message Passing Neural Networks for Fast and Accurate Force Fields
+- [NequIP (Batzner et al.)](https://arxiv.org/abs/2101.03164) — E(3)-Equivariant Graph Neural Networks for Data-Efficient and Accurate Interatomic Potentials

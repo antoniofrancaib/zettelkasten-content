@@ -259,10 +259,17 @@ The continuity equation and its role in generative modeling was discussed in the
 
 ## References
 
-- [Lipman, Chen, Ben-Hamu, Nickel, and Le](https://arxiv.org/abs/2210.02747) — Flow Matching for Generative Modeling (ICLR 2023)
-- [Albergo and Vanden-Eijnden](https://arxiv.org/abs/2209.15571) — Building Normalizing Flows with Stochastic Interpolants (ICLR 2023)
-- [Liu, Gong, and Liu](https://arxiv.org/abs/2209.03003) — Flow Straight and Fast: Learning to Generate and Transfer Data with Rectified Flow (ICLR 2023)
+- [Lipman, Chen, Ben-Hamu, Nickel, and Le (ICLR 2023)](https://arxiv.org/abs/2210.02747) — Flow Matching for Generative Modeling
+- [Albergo and Vanden-Eijnden (ICLR 2023)](https://arxiv.org/abs/2209.15571) — Building Normalizing Flows with Stochastic Interpolants
+- [Liu, Gong, and Liu (ICLR 2023)](https://arxiv.org/abs/2209.03003) — Flow Straight and Fast: Learning to Generate and Transfer Data with Rectified Flow
 - [Albergo, Boffi, and Vanden-Eijnden (2023)](https://arxiv.org/abs/2303.08797) — Stochastic Interpolants: A Unifying Framework for Flows and Diffusions
 - [Pooladian, Ben-Hamu, Domingo-Enrich, Amos, Lipman, and Chen (2023)](https://arxiv.org/abs/2304.14772) — Multisample Flow Matching: Straightening Flows with Minibatch Couplings
-- [Esser, Kulal, Blattmann, Rombach et al. (2024)](https://arxiv.org/abs/2403.03206) — Scaling Rectified Flow Transformers for High-Resolution Image Synthesis
+- [Tong, Malkin, Huguet, Zhang, Rector-Brooks, Fatras, Wolf, and Bengio (2024)](https://arxiv.org/abs/2302.05872) — Improving and Generalizing Flow-Matching for Source-Free Domain Adaptation
+- [Chen, Rubanova, Bettencourt, and Duvenaud (NeurIPS 2018)](https://arxiv.org/abs/1806.07366) — Neural Ordinary Differential Equations
+- [Ho, Jain, and Abbeel (NeurIPS 2020) — DDPM](https://arxiv.org/abs/2006.11239) — Denoising Diffusion Probabilistic Models
+- [Song, Dhariwal, Chen, and Sutskever (ICML 2023) — Consistency Models](https://arxiv.org/abs/2303.01469) — Consistency Models
 - [Karras et al. (2022)](https://arxiv.org/abs/2206.00364) — Elucidating the Design Space of Diffusion-Based Generative Models
+- [Esser, Kulal, Blattmann, Rombach et al. (2024)](https://arxiv.org/abs/2403.03206) — Scaling Rectified Flow Transformers for High-Resolution Image Synthesis (Stable Diffusion 3)
+- [Ma, Gong et al. (2024) — SiT](https://arxiv.org/abs/2401.08740) — Scalable Interpolant Transformers
+- [Brenier (1991)](https://doi.org/10.1002/cpa.3160440402) — Polar Factorization and Monotone Rearrangement of Vector-Valued Functions
+- [Meta Movie Gen (2024)](https://arxiv.org/abs/2410.13720) — Movie Gen: A Cast of Media Foundation Models

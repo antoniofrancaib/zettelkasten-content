@@ -278,7 +278,27 @@ The large-scale applications that made diffusion models dominant — **DALL-E 2*
 ## References
 
 - [Sohl-Dickstein, Weiss, Maheswaranathan, and Ganguli (ICML 2015)](https://arxiv.org/abs/1503.03585) — Deep Unsupervised Learning using Nonequilibrium Thermodynamics
-- [Ho et al., 2020](https://arxiv.org/abs/2006.11239) — Denoising Diffusion Probabilistic Models
-- [Song & Ermon, NeurIPS 2019](https://arxiv.org/abs/1907.05600) — Generative Modeling by Estimating Gradients of the Data Distribution
+- [Ho, Jain, and Abbeel (NeurIPS 2020)](https://arxiv.org/abs/2006.11239) — Denoising Diffusion Probabilistic Models (DDPM)
+- [Song & Ermon, NeurIPS 2019](https://arxiv.org/abs/1907.05600) — Generative Modeling by Estimating Gradients of the Data Distribution (NCSN)
+- [Song and Ermon (NeurIPS 2020) / NCSNv2](https://arxiv.org/abs/2006.09011) — Improved Techniques for Training Score-Based Generative Models
 - [Song, Sohl-Dickstein, Kingma, Kumar, Ermon, and Poole (ICLR 2021, outstanding paper)](https://arxiv.org/abs/2011.13456) — Score-Based Generative Modeling through Stochastic Differential Equations
+- [Song et al. (DDIM, 2020)](https://arxiv.org/abs/2010.02502) — Denoising Diffusion Implicit Models
+- [Ho & Salimans (2021) — Classifier-Free Guidance](https://arxiv.org/abs/2207.12598) — Classifier-Free Diffusion Guidance
+- [Salimans and Ho (2022)](https://arxiv.org/abs/2202.00512) — Progressive Distillation for Fast Sampling of Diffusion Models
+- [Hyvärinen (2005)](https://jmlr.org/papers/v6/hyvarinen05a.html) — Estimation of Non-Normalized Statistical Models by Score Matching (JMLR)
+- [Vincent (2011)](https://doi.org/10.1162/NECO_a_00142) — A Connection Between Score Matching and Denoising Autoencoders
+- [Anderson (1982)](https://doi.org/10.1016/0304-4149(82)90051-5) — Reverse-Time Diffusion Equation Models
+- [Robbins (1956)](https://doi.org/10.1525/9780520313880-018) — An Empirical Bayes Approach to Statistics
+- [Efron (2011)](https://doi.org/10.1198/jasa.2011.tm10651) — Tweedie's Formula and Selection Bias
+- [Kingma et al. (2021)](https://arxiv.org/abs/2107.00630) — Variational Diffusion Models
 - [Luo (2022)](https://arxiv.org/abs/2208.11970) — Understanding Diffusion Models: A Unified Perspective
+- [Seifert (2012)](https://doi.org/10.1088/0034-4885/75/12/126001) — Stochastic Thermodynamics, Fluctuation Theorems and Molecular Machines
+- [Øksendal (2003)](https://doi.org/10.1007/978-3-642-14394-6) — Stochastic Differential Equations: An Introduction with Applications
+- [Risken (1989)](https://doi.org/10.1007/978-3-642-61544-3) — The Fokker-Planck Equation: Methods of Solution and Applications
+- [De Bortoli (2022)](https://arxiv.org/abs/2208.05314) — Convergence of Denoising Diffusion Models under the Manifold Hypothesis
+- [Chen, Chewi, Li, Li, Salim, and Zhang (2022)](https://arxiv.org/abs/2209.11215) — Sampling is as Easy as Learning the Score
+- [Lee, Lu, and Tan (2022)](https://arxiv.org/abs/2206.06227) — Convergence for Score-Based Generative Modeling with Polynomial Complexity
+- [Ramesh et al. (2022) — DALL-E 2](https://arxiv.org/abs/2204.06125) — Hierarchical Text-Conditional Image Generation with CLIP Latents
+- [Rombach et al. (CVPR 2022) — Stable Diffusion](https://arxiv.org/abs/2112.10752) — High-Resolution Image Synthesis with Latent Diffusion Models
+- [Saharia et al. (NeurIPS 2022) — Imagen](https://arxiv.org/abs/2205.11487) — Photorealistic Text-to-Image Diffusion Models with Deep Language Understanding
+- [Peebles & Xie (2023) — DiT](https://arxiv.org/abs/2212.09748) — Scalable Diffusion Models with Transformers

@@ -254,4 +254,9 @@ The generator matching framework, seen through this lens, is the answer to a nat
 - [Lipman et al. (ICLR 2023)](https://arxiv.org/abs/2210.02747) — Flow Matching for Generative Modeling
 - [Liu et al. (2022)](https://arxiv.org/abs/2209.03003) — Flow Straight and Fast: Learning to Generate and Transfer Data with Rectified Flow
 - [Chen and Lipman (ICLR 2024)](https://arxiv.org/abs/2302.03660) — Flow Matching on General Geometries
-- [Campbell, Yim, Barzilay, Jaakkola, and Gat (NeurIPS 2024)](https://arxiv.org/abs/2406.04329) — Generative Flows on Discrete State-Spaces
+- [Campbell, Yim, Barzilay, Jaakkola, and Gat (NeurIPS 2024)](https://arxiv.org/abs/2406.04329) — Generative Flows on Discrete State-Spaces: Enabling Multimodal Flows with Applications to Protein Co-Design
+- [Gat et al. (NeurIPS 2024)](https://arxiv.org/abs/2407.15595) — Discrete Flow Matching
+- [Albergo, Boffi, and Vanden-Eijnden (2023)](https://arxiv.org/abs/2303.08797) — Stochastic Interpolants: A Unifying Framework for Flows and Diffusions
+- [Kingma et al. (2021) — likelihood-weighted DSM](https://arxiv.org/abs/2107.00630) — Variational Diffusion Models
+- [Amari (1985, 2016)](https://link.springer.com/book/10.1007/978-4-431-55978-8) — Information Geometry and Its Applications
+- [Banerjee, Merugu, Dhillon, and Ghosh (JMLR 2005)](https://jmlr.org/papers/v6/banerjee05b.html) — Clustering with Bregman Divergences

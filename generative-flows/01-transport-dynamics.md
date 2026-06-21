@@ -333,12 +333,27 @@ The connection between residual networks and ODE discretizations was developed e
 
 - [Goodfellow et al.](https://arxiv.org/abs/1406.2661) — Generative Adversarial Nets (2014)
 - [Kingma & Welling, 2013](https://arxiv.org/abs/1312.6114) — Auto-Encoding Variational Bayes
+- [Tabak & Vanden-Eijnden (2010)](https://doi.org/10.4310/CMS.2010.v8.n1.a1) — Density Estimation by Dual Ascent of the Log-Likelihood
+- [Tabak & Turner (2013)](https://doi.org/10.1002/cpa.21423) — A Family of Nonparametric Density Estimation Algorithms
+- [Rezende & Mohamed (ICML 2015)](https://arxiv.org/abs/1505.05770) — Variational Inference with Normalizing Flows
 - [Dinh, Krueger, and Bengio](https://arxiv.org/abs/1410.8516) — NICE: Non-linear Independent Components Estimation (2014)
-- [Dinh, Sohl-Dickstein, and Bengio](https://arxiv.org/abs/1605.08803) — Density Estimation using Real-valued Non-Volume Preserving Transformations (2016)
-- [Kingma and Dhariwal](https://arxiv.org/abs/1807.03039) — Glow: Generative Flow with Invertible 1×1 Convolutions (2018)
-- [Papamakarios, Murray, and Rainforth](https://arxiv.org/abs/1705.07057) — Masked Autoregressive Flow for Density Estimation (2017)
-- [Kingma et al.](https://arxiv.org/abs/1606.04934) — Improving Variational Inference with Inverse Autoregressive Flow (2016)
-- [Chen, Rubanova, Bettencourt, and Duvenaud](https://arxiv.org/abs/1806.07366) — Neural Ordinary Differential Equations (2018)
-- [Grathwohl, Chen, Bettencourt, Sutskever, and Duvenaud](https://arxiv.org/abs/1810.01367) — FFJORD: Free-Form Continuous Dynamics for Scalable Reversible Generative Models (2018)
-- [Rezende & Mohamed (2015)](https://arxiv.org/abs/1505.05770) — Variational Inference with Normalizing Flows
+- [Dinh, Sohl-Dickstein, and Bengio](https://arxiv.org/abs/1605.08803) — Density Estimation using Real-valued Non-Volume Preserving Transformations (RealNVP, 2016)
+- [Kingma and Dhariwal](https://arxiv.org/abs/1807.03039) — Glow: Generative Flow with Invertible 1×1 Convolutions (NeurIPS 2018)
+- [Papamakarios, Murray, and Rainforth](https://arxiv.org/abs/1705.07057) — Masked Autoregressive Flow for Density Estimation (NeurIPS 2017)
+- [Kingma et al.](https://arxiv.org/abs/1606.04934) — Improving Variational Inference with Inverse Autoregressive Flow (NeurIPS 2016)
+- [Papamakarios, Nalisnick, Rezende, Mohamed & Lakshminarayanan (2021)](https://arxiv.org/abs/1912.02762) — Normalizing Flows for Probabilistic Modeling and Inference (JMLR)
+- [Villani (2003)](https://doi.org/10.1090/gsm/058) — Topics in Optimal Transportation
+- [Villani (2009)](https://doi.org/10.1007/978-3-540-71050-9) — Optimal Transport: Old and New
+- [Ruthotto & Haber (2019)](https://arxiv.org/abs/1904.00804) — Deep Neural Networks Motivated by Partial Differential Equations
+- [Finlay et al. (2020)](https://arxiv.org/abs/2002.02798) — How to Train Your Neural ODE: The World of Jacobian and Kinetic Regularization
+- [He et al. (2016)](https://arxiv.org/abs/1512.03385) — Deep Residual Learning for Image Recognition
 - [Weinan E (2017)](https://arxiv.org/abs/1710.02266) — A Proposal on Machine Learning via Dynamical Systems
+- [Lu, Zhong, Li & Dong (2017)](https://arxiv.org/abs/1710.10121) — Beyond Finite Layer Neural Networks: Bridging Deep Architectures and Numerical Differential Equations
+- [Sohl-Dickstein, Weiss, Maheswaranathan, and Ganguli (ICML 2015)](https://arxiv.org/abs/1503.03585) — Deep Unsupervised Learning using Nonequilibrium Thermodynamics
+- [Chen, Rubanova, Bettencourt, and Duvenaud (NeurIPS 2018)](https://arxiv.org/abs/1806.07366) — Neural Ordinary Differential Equations
+- [Grathwohl, Chen, Bettencourt, Sutskever, and Duvenaud (ICLR 2019)](https://arxiv.org/abs/1810.01367) — FFJORD: Free-Form Continuous Dynamics for Scalable Reversible Generative Models
+- [Hutchinson (1989)](https://doi.org/10.1080/03610918908812806) — A Stochastic Estimator of the Trace of the Influence Matrix for Laplacian Smoothing Splines
+- [Haber & Ruthotto (2017)](https://arxiv.org/abs/1705.03341) — Stable Architectures for Deep Neural Networks
+- [Chang et al. (2018)](https://arxiv.org/abs/1710.10348) — Multi-Level Residual Networks from Dynamical Systems View
+- [Kidger, Morrill, Foster, and Lyons (2020)](https://arxiv.org/abs/2005.08926) — Neural Controlled Differential Equations for Irregular Time Series
+- [Kidger (2022)](https://arxiv.org/abs/2202.02435) — On Neural Differential Equations (PhD thesis)
