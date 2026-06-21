@@ -1,6 +1,6 @@
 ---
 
-title: "Transport Theory and Schrödinger Bridges"
+title: "Optimal Transport"
 subtitle: "Monge maps, Wasserstein geometry, entropy-regularized OT, bridge matching, and the stochastic middle ground — 1781 to 2025"
 ---
 

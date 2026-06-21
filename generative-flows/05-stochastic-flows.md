@@ -1,6 +1,6 @@
 ---
 
-title: "The Noise Question"
+title: "Stochastic Flows"
 subtitle: "When and why stochasticity helps — Langevin correctors, drift-based generation, and the design of noise — 2020 to 2025"
 ---
 

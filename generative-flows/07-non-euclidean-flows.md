@@ -1,6 +1,6 @@
 ---
 
-title: "Beyond Euclidean Space"
+title: "Non-Euclidean"
 subtitle: "Discrete flows via CTMCs and Riemannian flow matching — 2021 to 2025"
 ---
 

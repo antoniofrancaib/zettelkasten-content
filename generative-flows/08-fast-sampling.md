@@ -1,6 +1,6 @@
 ---
 
-title: "The Speed Problem"
+title: "Fast Sampling"
 subtitle: "Consistency models, stochastic flow maps, distillation, and the race to one step — 2021 to 2026"
 ---
 

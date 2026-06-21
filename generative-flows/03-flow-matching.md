@@ -1,6 +1,6 @@
 ---
 
-title: "The Convergence"
+title: "Flow Matching"
 subtitle: "Simulation-free training, linear interpolants, and the unification of two tracks — 2022 to 2023"
 ---
 

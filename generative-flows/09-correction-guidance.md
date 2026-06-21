@@ -1,6 +1,6 @@
 ---
 
-title: "Correction and Guidance"
+title: "Guidance"
 subtitle: "Feynman-Kac correctors, SMC samplers, classifier guidance, CFG, reward steering, and posterior sampling — 2001 to 2026"
 ---
 

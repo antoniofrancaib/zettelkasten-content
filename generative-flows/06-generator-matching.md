@@ -1,6 +1,6 @@
 ---
 
-title: "The Grand Unification"
+title: "Generator Matching"
 subtitle: "Markov generators, Bregman divergences, and one theorem to rule them all — 2025"
 ---
 

@@ -1,6 +1,6 @@
 ---
 
-title: "Destroy and Reconstruct"
+title: "Diffusion"
 subtitle: "Score matching, denoising diffusion, and the probability flow ODE — 2015 to 2021"
 ---
 

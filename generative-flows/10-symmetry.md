@@ -1,6 +1,6 @@
 ---
 
-title: "The Structure You Already Know"
+title: "Symmetry"
 subtitle: "Equivariant architectures, divergence-free fields, neural conservation laws, and why the right constraints make learning easier — 2020 to 2025"
 ---
 
