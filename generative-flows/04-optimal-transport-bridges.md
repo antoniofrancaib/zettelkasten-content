@@ -355,3 +355,12 @@ At large $\sigma$: the bridge approaches pure Brownian motion with marginal cons
 The application to generative modeling began with **De Bortoli, Thornton, Heng, and Doucet (2021)** ("Diffusion Schrödinger Bridge with Applications to Score-Based Generative Modeling"), who showed that Schrödinger bridges can be learned by alternating score matching and diffusion simulation. **Vargas, Nüsken, and Richter (2021)** ("Solving Schrödinger Bridges via Maximum Likelihood") proposed a maximum-likelihood approach. **Chen, Conforti, and Georgiou (2021)** developed the stochastic control perspective. **Liu, Gat, Polyak, et al. (2023)** ("I$^2$SB: Image-to-Image Schrödinger Bridge") demonstrated practical image-to-image translation using iterative bridge refinement. **Shi, De Bortoli, Campbell, and Doucet (2024)** ("Diffusion Schrödinger Bridge Matching") introduced the bridge matching framework that makes training tractable. **Peluchetti (2023)** ("Diffusion Bridge Mixture Transports, Schrödinger Bridge Problems and Generative Modeling") clarified the theoretical connections between bridges, diffusion models, and flow matching.
 
 The connection between Schrödinger bridges and iterative proportional fitting was formalized by **Ruschendorf (1995)** and brought to the generative modeling setting by **De Bortoli et al. (2021)**. The interpretation of diffusion models as Schrödinger half-bridges appears in **Huang, Jiao, Shi, and Kang (2021)** and was further developed by **Chen and Lipman (2024)**.
+
+## References
+
+- [Cuturi (2013)](https://arxiv.org/abs/1306.0895) — Sinkhorn Distances: Lightspeed Computation of Optimal Transport
+- [Peyré and Cuturi (2019)](https://arxiv.org/abs/1803.00567) — Computational Optimal Transport
+- [De Bortoli, Thornton, Heng, and Doucet (2021)](https://arxiv.org/abs/2106.01357) — Diffusion Schrödinger Bridge with Applications to Score-Based Generative Modeling
+- [Vargas, Nüsken, and Richter (2021)](https://arxiv.org/abs/2106.04379) — Solving Schrödinger Bridges via Maximum Likelihood
+- [Liu, Gat, Polyak, et al. (2023)](https://arxiv.org/abs/2303.07845) — I²SB: Image-to-Image Schrödinger Bridge
+- [Shi, De Bortoli, Campbell, and Doucet (2024)](https://arxiv.org/abs/2309.01099) — Diffusion Schrödinger Bridge Matching

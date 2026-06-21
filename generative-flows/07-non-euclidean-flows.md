@@ -385,3 +385,13 @@ This universality reflects a single abstract principle: the Kolmogorov equation 
 **Protein structure generation.** The SE(3) diffusion approach for protein backbones was introduced by **Yim, Trippe, De Bortoli, Mathieu, Doucet, Barzilay, and Jaakkola (ICML 2023)** ("SE(3) Diffusion Model with Application to Protein Backbone Generation"). The flow matching version — **FoldFlow** — is due to **Bose, Akhound-Sadegh, Huguet, Wolf, Rekesh, Su, Zhang, Bengio, Bhatt, Lee, Tong, Hamilton, and Bronstein (NeurIPS 2023)**, with the scaled-up version **FoldFlow-2 (Huguet et al., 2024)** incorporating OT conditioning on $SE(3)$. The AlphaFold-3 (Abramson et al., Nature 2024) architecture uses a diffusion process on atom coordinates without explicit $SE(3)$ structure, while FrameDiff (Yim et al.) and RFdiffusion (Watson, Juergens, et al., Nature 2023) use explicit frame representations.
 
 **Simplex flows.** The Dirichlet flow matching framework for genomic sequences is developed in **Stark, Jing, Wang, Geiger, Barzilay, Jaakkola (ICML 2024)** ("Dirichlet Flow Matching with Applications to DNA Sequence Design"), which establishes the isometry between the simplex with Fisher-Rao metric and the spherical orthant and applies it to promoter sequence design. **Campbell, Benton, De Bortoli, Rainforth, Deligiannidis, and Doucet (NeurIPS 2022)** ("A Continuous Time Framework for Discrete Denoising Models") provided the CTMC theoretical foundation for these approaches.
+
+## References
+
+- [Austin, Johnson, Ho & Barber (2021)](https://arxiv.org/abs/2107.03006) — Structured Denoising Diffusion Models in Discrete State-Spaces
+- [Lou, Meng & Ermon (2023)](https://arxiv.org/abs/2310.16834) — Discrete Diffusion Modeling by Estimating the Ratios of the Data Distribution
+- [Gat, Remez, Shaul, Kreuk, Chen, Synnaeve, Adi, and Lipman (NeurIPS 2024)](https://arxiv.org/abs/2407.15595) — Discrete Flow Matching
+- [Campbell, Benton, De Bortoli, Rainforth, Deligiannidis, and Doucet (NeurIPS 2022)](https://arxiv.org/abs/2205.14987) — A Continuous Time Framework for Discrete Denoising Models
+- [Chen and Lipman's 'Flow Matching on General Geometries' (ICLR 2024, outstanding paper)](https://arxiv.org/abs/2302.03660) — Flow Matching on General Geometries
+- [TorsionalDiffusion (Jing, Corso, Chang, Barzilay, Jaakkola, ICLR 2023)](https://arxiv.org/abs/2210.01776) — Torsional Diffusion for Molecular Conformations
+- [Stark, Jing, Wang, Geiger, Barzilay, Jaakkola (ICML 2024)](https://arxiv.org/abs/2402.05841) — Dirichlet Flow Matching with Applications to DNA Sequence Design

@@ -274,3 +274,11 @@ The continuous-time SDE unification is **Song, Sohl-Dickstein, Kingma, Kumar, Er
 Theoretical convergence rates for score-based models — relating total variation distance between model and $p_{\text{data}}$ to score estimation error and discretization step size — are developed in **De Bortoli (2022)**, **Chen, Chewi, Li, Li, Salim, and Zhang (2022)**, and **Lee, Lu, and Tan (2022)**. The sharpest current results give polynomial dependence on dimension under log-Sobolev or Poincaré inequalities on $p_{\text{data}}$.
 
 The large-scale applications that made diffusion models dominant — **DALL-E 2** (Ramesh et al., 2022), **Stable Diffusion** (Rombach et al., CVPR 2022), **Imagen** (Saharia et al., NeurIPS 2022) — all build on the DDPM backbone with classifier-free guidance (Ho & Salimans, 2021) and latent-space diffusion (Rombach et al.). The diffusion transformer architecture (DiT, Peebles & Xie, 2023), which replaced U-Nets with transformers as the score network backbone, is now the standard architecture for large-scale image and video generation.
+
+## References
+
+- [Sohl-Dickstein, Weiss, Maheswaranathan, and Ganguli (ICML 2015)](https://arxiv.org/abs/1503.03585) — Deep Unsupervised Learning using Nonequilibrium Thermodynamics
+- [Ho et al., 2020](https://arxiv.org/abs/2006.11239) — Denoising Diffusion Probabilistic Models
+- [Song & Ermon, NeurIPS 2019](https://arxiv.org/abs/1907.05600) — Generative Modeling by Estimating Gradients of the Data Distribution
+- [Song, Sohl-Dickstein, Kingma, Kumar, Ermon, and Poole (ICLR 2021, outstanding paper)](https://arxiv.org/abs/2011.13456) — Score-Based Generative Modeling through Stochastic Differential Equations
+- [Luo (2022)](https://arxiv.org/abs/2208.11970) — Understanding Diffusion Models: A Unified Perspective

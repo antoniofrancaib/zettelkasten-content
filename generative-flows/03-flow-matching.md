@@ -256,3 +256,13 @@ The optimal transport connection was developed by **Pooladian, Ben-Hamu, Domingo
 The large-scale validation came with **Stable Diffusion 3** (Esser et al., 2024, "Scaling Rectified Flow Transformers for High-Resolution Image Synthesis") which used a cosine-schedule rectified flow trained with a transformer architecture, achieving state-of-the-art image quality. The theoretical analysis connecting flow matching to the kinetic optimal transport formulation of Brenier (1991) is developed in **Albergo, Boffi, and Vanden-Eijnden (2023)** and **Liu (2022)** ("Rectified Flow: A Marginal Preserving Approach to Optimal Transport").
 
 The continuity equation and its role in generative modeling was discussed in the CNF literature from the beginning (Chen et al., 2018), but its role as the *definition* of a generative model — separate from any training procedure — was first made explicit in **Lipman et al. (2023)**. The observation that diffusion models are a special case of flow matching appears in all three founding papers and was also noted independently in **Song (2023)** ("Consistency Models") and **Karras et al. (2022)** ("Elucidating the Design Space of Diffusion-Based Generative Models"), which systematically explored the space of diffusion schedules and presaged the flow matching perspective.
+
+## References
+
+- [Lipman, Chen, Ben-Hamu, Nickel, and Le](https://arxiv.org/abs/2210.02747) — Flow Matching for Generative Modeling (ICLR 2023)
+- [Albergo and Vanden-Eijnden](https://arxiv.org/abs/2209.15571) — Building Normalizing Flows with Stochastic Interpolants (ICLR 2023)
+- [Liu, Gong, and Liu](https://arxiv.org/abs/2209.03003) — Flow Straight and Fast: Learning to Generate and Transfer Data with Rectified Flow (ICLR 2023)
+- [Albergo, Boffi, and Vanden-Eijnden (2023)](https://arxiv.org/abs/2303.08797) — Stochastic Interpolants: A Unifying Framework for Flows and Diffusions
+- [Pooladian, Ben-Hamu, Domingo-Enrich, Amos, Lipman, and Chen (2023)](https://arxiv.org/abs/2304.14772) — Multisample Flow Matching: Straightening Flows with Minibatch Couplings
+- [Esser, Kulal, Blattmann, Rombach et al. (2024)](https://arxiv.org/abs/2403.03206) — Scaling Rectified Flow Transformers for High-Resolution Image Synthesis
+- [Karras et al. (2022)](https://arxiv.org/abs/2206.00364) — Elucidating the Design Space of Diffusion-Based Generative Models

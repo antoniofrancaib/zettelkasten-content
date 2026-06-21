@@ -158,3 +158,11 @@ For molecular generative flows, **Köhler, Klein, and Noé (2020)** ("Equivarian
 Neural conservation laws and divergence-free fields were explored by **Greydanus, Dzamba, and Sotelo (2019)** ("Hamiltonian Neural Networks"), who parameterized the Hamiltonian to enforce energy conservation. **Cranmer, Greydanus, Hoyer, et al. (2020)** ("Lagrangian Neural Networks") took the Lagrangian approach. **Finzi, Wang, and Wilson (2020)** studied general constraint satisfaction in equivariant networks. The Helmholtz decomposition for neural vector fields was applied to generative models by **Rozen, Grover, Nickel, and Lipman (2021)**.
 
 The projection approach to constraint manifolds builds on the SHAKE and RATTLE algorithms from molecular dynamics (**Ryckaert, Ciccotti, and Berendsen, 1977**; **Andersen, 1983**), adapted to the neural ODE setting by **Lou, Lim, Katsman, Huang, Jiang, Lim, and De Sa (2020)** ("Neural Manifold Ordinary Differential Equations"). Symplectic neural networks were introduced by **Chen, Zhang, Arjovsky, and Bottou (2020)** ("Symplectic Recurrent Neural Networks") and extended to generative flows by **Toth, Rezende, Jaegle, Racanière, Botev, and Higgins (2020)**.
+
+## References
+
+- [Cohen and Welling (2016)](https://arxiv.org/abs/1602.07576) — Group Equivariant Convolutional Networks
+- [Köhler, Klein, and Noé (2020)](https://arxiv.org/abs/2006.02425) — Equivariant Flows: Exact Likelihood Generative Learning for Symmetric Densities
+- [Hoogeboom, Satorras, Vignac, and Welling (2022)](https://arxiv.org/abs/2203.17003) — Equivariant Diffusion for Molecule Generation in 3D
+- [Bose, Akhound-Sadegh, Huguet, Wolf, Rekesh, Su, Zhang, Bengio, Bhatt, Lee, Tong, Hamilton, and Bronstein (NeurIPS 2023)](https://arxiv.org/abs/2310.02391) — SE(3)-Stochastic Flow Matching for Protein Backbone Generation
+- [Greydanus, Dzamba, and Sotelo (2019)](https://arxiv.org/abs/1906.01563) — Hamiltonian Neural Networks

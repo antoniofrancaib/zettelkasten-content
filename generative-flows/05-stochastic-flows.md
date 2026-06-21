@@ -191,3 +191,11 @@ Stochastic interpolants with non-zero diffusion were developed by **Albergo, Bof
 Langevin dynamics as a generative tool was pioneered by **Song and Ermon (2019)** (NCSN) and refined in **Song and Ermon (2020)** (NCSNv2). The Metropolis-adjusted Langevin algorithm has a long history in computational statistics, surveyed in **Roberts and Rosenthal (1998)**. Its use as a corrector for diffusion models was explored by **Song et al. (2021)** and further analyzed by **Wu, Trippe, Naesseth, Blei, and Cunningham (2020)** in the context of annealed importance sampling.
 
 The drift-based perspective — learning a drift for a fixed-noise SDE — connects to the optimal control literature, where the Schrödinger bridge drift (Chapter 4) is the solution to a stochastic control problem. **Tzen and Raginsky (2019)** ("Neural Stochastic Differential Equations: Deep Latent Gaussian Models in the Diffusion Limit") and **Li, Wong, Chen, and Duvenaud (2020)** explored neural SDEs from the latent variable perspective. The annealing approach to noise scheduling was formalized by **Dockhorn, Vahdat, and Kreis (2022)** ("Score-Based Generative Modeling with Critically-Damped Langevin Diffusion"), who introduced underdamped Langevin dynamics with momentum as an alternative to the standard overdamped formulation.
+
+## References
+
+- [Song, Sohl-Dickstein, Kingma, Kumar, Ermon, and Poole (2021)](https://arxiv.org/abs/2011.13456) — Score-Based Generative Modeling through Stochastic Differential Equations
+- [Karras, Aittala, Aila, and Laine (2022)](https://arxiv.org/abs/2206.00364) — Elucidating the Design Space of Diffusion-Based Generative Models
+- [Albergo, Boffi, and Vanden-Eijnden (2023)](https://arxiv.org/abs/2303.08797) — Stochastic Interpolants: A Unifying Framework for Flows and Diffusions
+- [Tzen and Raginsky (2019)](https://arxiv.org/abs/1905.09883) — Neural Stochastic Differential Equations: Deep Latent Gaussian Models in the Diffusion Limit
+- [Dockhorn, Vahdat, and Kreis (2022)](https://arxiv.org/abs/2112.07068) — Score-Based Generative Modeling with Critically-Damped Langevin Diffusion

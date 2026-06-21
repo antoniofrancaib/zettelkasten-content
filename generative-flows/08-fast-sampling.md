@@ -231,3 +231,11 @@ For scientific applications, the picture is different. In protein structure pred
 **Shortcut models** (**Frans, Hafner, Levine, and Abbeel, 2025**) unified fast and slow sampling in a single model parametrized by step size, eliminating the need for separate distillation. Concurrent work on **consistency flow matching** (**Yang, Tang, and Gong, 2025**) developed a version of the consistency framework directly for flow matching (rather than diffusion) ODEs, obtaining tighter theoretical connections to the generator matching framework of Chapter 6.
 
 The arc of this literature — from DDIM's empirical discovery to the theoretical framework of flow maps and consistency functions — is a pattern that recurs throughout this monograph: a practical speedup motivates a mathematical formalization, which reveals the underlying principle, which enables new methods. The principle here is the composition law of ODE flows: $\Psi_{t \to s} \circ \Psi_{s \to r} = \Psi_{t \to r}$. Every fast-sampling method exploits this law, in one form or another.
+
+## References
+
+- [Song, Meng, and Ermon (ICLR 2021)](https://arxiv.org/abs/2010.02502) — Denoising Diffusion Implicit Models
+- [Liu, Gong, and Liu (ICLR 2023)](https://arxiv.org/abs/2209.03003) — Flow Straight and Fast: Learning to Generate and Transfer Data with Rectified Flow
+- [Salimans and Ho, ICLR 2022](https://arxiv.org/abs/2202.00512) — Progressive Distillation for Fast Sampling of Diffusion Models
+- [Song, Dhariwal, Chen, and Sutskever, ICML 2023](https://arxiv.org/abs/2303.01469) — Consistency Models
+- [Song and Dhariwal, NeurIPS 2023](https://arxiv.org/abs/2310.14189) — Improved Consistency Training

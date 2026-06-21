@@ -381,3 +381,11 @@ The tilted-distribution interpretation of guidance was formalized by **Karras et
 Compositional generation was explored by **Liu, Karalias, Rempel, and Fidler (2022)** ("Compositional Visual Generation with Composable Diffusion Models") and **Du, Li, and Mordatch (2023)**. The information-theoretic analysis of the guidance-diversity tradeoff appears in **Ho and Salimans (2022)** and was further developed by **Kynkäänniemi, Karras, Laine, Lehtinen, and Aila (2024)**.
 
 Conditional flow matching was developed as a natural extension of the flow matching framework by **Lipman et al. (2023)** and **Tong et al. (2024)**. The application to molecular design — conditioning on molecular properties, binding targets, or experimental constraints — is an active area developed by **Jing et al. (2024)** (AlphaFold 3's diffusion module), **Yim et al. (2023)** (FrameFlow), and **Song et al. (2024)** (EquiFM).
+
+## References
+
+- [Dhariwal and Nichol (2021)](https://arxiv.org/abs/2105.05233) — Diffusion Models Beat GANs on Image Synthesis
+- [Ho and Salimans (2022)](https://arxiv.org/abs/2207.12598) — Classifier-Free Diffusion Guidance
+- [Chung, Kim, Mccann, Klasky, and Ye (2023)](https://arxiv.org/abs/2209.14687) — Diffusion Posterior Sampling for General Noisy Inverse Problems
+- [Ramesh et al. (2022)](https://arxiv.org/abs/2204.06125) — Hierarchical Text-Conditional Image Generation with CLIP Latents (DALL-E 2)
+- [Lipman et al. (ICLR 2023)](https://arxiv.org/abs/2210.02747) — Flow Matching for Generative Modeling

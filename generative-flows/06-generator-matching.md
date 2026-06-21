@@ -247,3 +247,11 @@ Chapter 7 develops the two non-Euclidean instantiations in full: discrete flow m
 A remark on the mathematics is warranted, because the appearance of Bregman divergences in this context is not accidental. **Amari** (1985, 2016) established that the natural divergences on statistical manifolds are the $f$-divergences and Bregman divergences arising from the geometry of exponential families — and that denoising, regression, and maximum-likelihood estimation are all instances of Bregman projection. **Banerjee, Merugu, Dhillon, and Ghosh (JMLR 2005)** showed that every Bregman divergence corresponds to an exponential family and vice versa, and that the "generalized mean" defined by minimizing the expected Bregman divergence is simply the expectation. This is exactly the fact exploited in the proof of Theorem 6.1: $\argmin_b\,\mathbb{E}[D_\phi(A\|b)] = \mathbb{E}[A]$ for any Bregman divergence and any random variable $A$.
 
 The generator matching framework, seen through this lens, is the answer to a natural question: what is the correct divergence between Markov generators? The answer is: any Bregman divergence, applied to the local generator statistics. The choice of divergence determines the implicit statistical model — squared norm corresponds to Gaussian regression, KL corresponds to categorical maximum-likelihood — and the choice of generator class determines the process being modeled. The two choices together determine the method. The theorem holds for all of them.
+
+## References
+
+- [Holderrieth, Yim, and Jaakkola](https://arxiv.org/abs/2409.11399) — Generator Matching: Generative Modeling with Arbitrary Markov Processes
+- [Lipman et al. (ICLR 2023)](https://arxiv.org/abs/2210.02747) — Flow Matching for Generative Modeling
+- [Liu et al. (2022)](https://arxiv.org/abs/2209.03003) — Flow Straight and Fast: Learning to Generate and Transfer Data with Rectified Flow
+- [Chen and Lipman (ICLR 2024)](https://arxiv.org/abs/2302.03660) — Flow Matching on General Geometries
+- [Campbell, Yim, Barzilay, Jaakkola, and Gat (NeurIPS 2024)](https://arxiv.org/abs/2406.04329) — Generative Flows on Discrete State-Spaces
