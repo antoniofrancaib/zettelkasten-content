@@ -6,7 +6,7 @@ subtitle: "Consistency models, stochastic flow maps, distillation, and the race 
 
 
 
-There is a structural irony at the heart of flow matching. The entire motivation for conditional flow matching — the thesis of Chapter 4 — was to eliminate the need for simulation during training. The original continuous normalizing flows required integrating an ODE at every gradient step; the simulation bottleneck made training prohibitively expensive. Flow matching resolved this by replacing ODE simulation with regression against a known conditional velocity field, reducing training cost to a single forward pass per gradient step. The simulation bottleneck was declared solved.
+There is a structural irony at the heart of flow matching. The entire motivation for conditional flow matching — the thesis of Chapter 3 — was to eliminate the need for simulation during training. The original continuous normalizing flows required integrating an ODE at every gradient step; the simulation bottleneck made training prohibitively expensive. Flow matching resolved this by replacing ODE simulation with regression against a known conditional velocity field, reducing training cost to a single forward pass per gradient step. The simulation bottleneck was declared solved.
 
 It was solved for training. At inference, it reappears.
 
@@ -36,14 +36,14 @@ The error is amplified by the curvature of the learned trajectories. If the ODE 
 
 The first practical breakthrough came not from the flow matching community but from the diffusion community — and it consisted of a simple observation: the stochasticity in DDPM sampling is unnecessary.
 
-Recall from Chapter 3 that the DDPM reverse process is a Markov chain:
+Recall from Chapter 2 that the DDPM reverse process is a Markov chain:
 $$x_{t-1} = \mu_\theta(x_t, t) + \sigma_t\, \epsilon, \quad \epsilon \sim \mathcal{N}(0, I).$$
 
 The added noise $\sigma_t\, \epsilon$ ensures that the chain maintains the correct marginal distribution at each step, but it also forces the process to take small steps: if you skip steps, the accumulated noise pushes the sample off the data manifold. **Denoising Diffusion Implicit Models** (Song, Meng, and Ermon, ICLR 2021) showed that the noise term can be removed entirely — or scaled by an arbitrary parameter $\eta \in [0,1]$ — while leaving the marginal distributions $q(x_t)$ unchanged:
 
 $$x_{t-1} = \sqrt{\bar\alpha_{t-1}}\,\hat{x}_0(x_t, t) + \sqrt{1-\bar\alpha_{t-1} - \eta^2\sigma_t^2}\,\frac{x_t - \sqrt{\bar\alpha_t}\,\hat{x}_0}{\sqrt{1-\bar\alpha_t}} + \eta\,\sigma_t\,\epsilon,$$
 
-where $\hat{x}_0 = (x_t - \sqrt{1-\bar\alpha_t}\,\epsilon_\theta)/ \sqrt{\bar\alpha_t}$ is the predicted clean sample. With $\eta = 0$, the process is **deterministic**: the same initial noise $x_T$ always produces the same final sample $x_0$. The deterministic reverse process is exactly the **probability flow ODE** of Chapter 3 (equation 3.8), integrated backwards.
+where $\hat{x}_0 = (x_t - \sqrt{1-\bar\alpha_t}\,\epsilon_\theta)/ \sqrt{\bar\alpha_t}$ is the predicted clean sample. With $\eta = 0$, the process is **deterministic**: the same initial noise $x_T$ always produces the same final sample $x_0$. The deterministic reverse process is exactly the **probability flow ODE** of Chapter 2 (equation 2.8), integrated backwards.
 
 Determinism enables a crucial speedup: a deterministic ODE can be integrated with larger steps and adaptive step-size control. Song et al. showed that DDIM with 50 steps achieves comparable sample quality to DDPM with 1000 steps — a 20× reduction in NFE. This was the opening result of the fast-sampling era.
 
@@ -90,7 +90,7 @@ The conditional velocity target is the constant vector $x_1^{(i)} - x_0^{(i)}$ �
 Iterating the procedure — "1-Rectified Flow" trains on random pairs, "2-Rectified Flow" reflows 1-RF's output, and so on — progressively straightens trajectories. Liu et al. showed that 2-Rectified Flow with a 1-step Euler integrator achieves sample quality comparable to 1-Rectified Flow with 100 steps on standard image generation benchmarks. The cost is generating the coupled dataset $\{(x_0^{(i)}, x_1^{(i)})\}$ — which itself requires 100+ NFE per sample from the original model.
 
 > [!remark] 8.2
-> The reflow procedure has a clean geometric interpretation in terms of the theory developed in Chapter 4. Mini-batch OT conditioning (Section 4.5) produces straight trajectories *at training time* by minimizing the transport cost between noise and data samples within each batch. Reflow achieves the same effect *after training* by using the trained ODE to generate better-coupled pairs. Both methods are trying to solve the same problem — reduce trajectory crossings — using different interventions: OT at training, reflow at post-training. In practice, OT-conditioned training combined with reflow gives straighter trajectories than either method alone.
+> The reflow procedure has a clean geometric interpretation in terms of the theory developed in Chapter 3. Mini-batch OT conditioning (Section 3.5) produces straight trajectories *at training time* by minimizing the transport cost between noise and data samples within each batch. Reflow achieves the same effect *after training* by using the trained ODE to generate better-coupled pairs. Both methods are trying to solve the same problem — reduce trajectory crossings — using different interventions: OT at training, reflow at post-training. In practice, OT-conditioned training combined with reflow gives straighter trajectories than either method alone.
 
 
 ## 8.5 The Consistency Function
@@ -203,7 +203,7 @@ is the result of two half-steps of size $d/2$ using the model itself, with stop-
 The shortcut model achieves several desirable properties simultaneously. It generates in one step by calling $s_\theta(x_0, 0, 1)$. It generates in $T$ steps by calling $s_\theta(x_t, t, 1/T)$ at each step, recovering standard flow matching behavior. For intermediate step counts, it interpolates — using the consistency objective to ensure that shorter chains compose into longer ones. A single model covers the entire speed-quality curve, without requiring separate distillation stages.
 
 > [!remark] 8.3
-> Shortcut models resolve an aesthetic problem with consistency distillation and progressive distillation: both require a separate distillation phase, producing a second model that cannot be updated when the teacher is retrained. Shortcut models train the fast-sampling capability jointly with the standard flow matching capability, in a single procedure. The self-consistency loss plays the same role as the consistency property (6.3) of Bregman divergences in the generator matching theorem: it replaces an intractable "marginal" target (the exact flow map) with a "conditional" self-referential target (two half-steps), exploiting the composition law of ODEs.
+> Shortcut models resolve an aesthetic problem with consistency distillation and progressive distillation: both require a separate distillation phase, producing a second model that cannot be updated when the teacher is retrained. Shortcut models train the fast-sampling capability jointly with the standard flow matching capability, in a single procedure. The self-consistency loss plays the same role as the consistency property of Bregman divergences in the generator matching theorem of Chapter 6: it replaces an intractable "marginal" target (the exact flow map) with a "conditional" self-referential target (two half-steps), exploiting the composition law of ODEs.
 
 
 ## 8.10 The NFE-Quality Frontier
@@ -218,7 +218,7 @@ For scientific applications, the picture is different. In protein structure pred
 
 ## 8.11 Historical Notes
 
-**DDIM** is the foundation of the fast-sampling literature. **Song, Meng, and Ermon (ICLR 2021)** showed that the DDPM reverse process is a deterministic ODE — the probability flow ODE of Chapter 3 — and that 50-step integration suffices for competitive quality. This paper established the conceptual framework for all subsequent work: the sampling process is an ODE, not a Markov chain, and ODE numerics apply.
+**DDIM** is the foundation of the fast-sampling literature. **Song, Meng, and Ermon (ICLR 2021)** showed that the DDPM reverse process is a deterministic ODE — the probability flow ODE of Chapter 2 — and that 50-step integration suffices for competitive quality. This paper established the conceptual framework for all subsequent work: the sampling process is an ODE, not a Markov chain, and ODE numerics apply.
 
 **DPM-Solver** and **DPM-Solver++** (**Lu, Zhou, Bao, Chen, Li, and Zhu, NeurIPS 2022**) developed the exponential integrator approach for the semilinear diffusion ODE, achieving 10–20 NFE. **PNDM** (**Liu, Ren, Lin, and Zhao, ICLR 2022**) took a different approach — pseudo-numerical methods that exploit the smoothness of the score function in diffusion time — achieving similar speedups from a different mathematical direction.
 

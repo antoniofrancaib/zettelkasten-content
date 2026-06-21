@@ -6,13 +6,13 @@ subtitle: "Markov generators, Bregman divergences, and one theorem to rule them 
 
 
 
-By the close of Chapter 5, the theory of generative flows had ramified into an archipelago of related but formally distinct methods. Euclidean flow matching works through vector fields and the continuity equation. Diffusion models work through score functions and the Fokker-Planck equation. Discrete flow matching works through rate matrices and the Kolmogorov forward equation. Riemannian flow matching works through geodesic interpolants on curved manifolds. Each has its own training objective, its own proof that the conditional version equals the marginal version, its own collection of design choices. The methods look and feel like the same idea. But the same idea as what?
+By the close of Chapter 5, the theory of generative flows had split into two formally distinct families for continuous data. Euclidean flow matching works through vector fields and the continuity equation. Diffusion models work through score functions and the Fokker-Planck equation. Each has its own training objective, its own proof that the conditional version equals the marginal version, its own collection of design choices. The methods look and feel like the same idea. But the same idea as what?
 
-The answer came in 2025, in a paper titled "Generator Matching: Generative Modeling with Arbitrary Markov Processes" by Holderrieth, Yim, and Jaakkola. It does not introduce a new generative model. It identifies the right level of abstraction at which all existing models become special cases of a single construction: **matching the generator of a Markov process** using a **Bregman divergence**. When you see the framework, the proliferation of objectives does not look like four different ideas. It looks like one idea written in four fonts.
+The answer came in 2025, in a paper titled "Generator Matching: Generative Modeling with Arbitrary Markov Processes" by Holderrieth, Yim, and Jaakkola. It does not introduce a new generative model. It identifies the right level of abstraction at which all existing models become special cases of a single construction: **matching the generator of a Markov process** using a **Bregman divergence**. When you see the framework, the proliferation of objectives does not look like multiple different ideas. It looks like one idea written in different fonts — and as Chapter 7 will show, the same principle extends seamlessly to discrete flow matching (rate matrices, Kolmogorov forward equation) and Riemannian flow matching (geodesic interpolants on curved manifolds).
 
 ## 6.1 A Zoo of Objectives
 
-Before presenting the unification, it is worth confronting the fragmentation it resolves. Across the preceding chapters, four training objectives have accumulated — each derived from first principles, each enjoying a conditional-equals-marginal equivalence, each requiring nothing more than sampling from conditional distributions at training time.
+Before presenting the unification, it is worth confronting the fragmentation it resolves. Across the preceding chapters, several training objectives have accumulated — each derived from first principles, each enjoying a conditional-equals-marginal equivalence, each requiring nothing more than sampling from conditional distributions at training time.
 
 The **conditional flow matching** objective for Euclidean data ($x_1 \in \mathbb{R}^d$, linear interpolant):
 
@@ -85,13 +85,13 @@ The generator acts on functions; its $L^2$-adjoint $\mathcal{L}_t^*$ acts on pro
 This is the **Kolmogorov forward equation** in its most general form, and (6.2) is the common root of every evolution equation encountered in the preceding chapters.
 
 For the **ODE generator** (6.1), the adjoint acts by $\mathcal{L}_t^* p = -\nabla \cdot (p\,u_t)$, and (6.2) becomes:
-$$\partial_t p_t + \nabla \cdot (p_t u_t) = 0 \quad \text{— the continuity equation (4.1).}$$
+$$\partial_t p_t + \nabla \cdot (p_t u_t) = 0 \quad \text{— the continuity equation (3.1).}$$
 
 For the **diffusion generator**, $\mathcal{L}_t^* p = -\nabla \cdot (p\,b_t) + \tfrac{1}{2}g_t^2\,\Delta p$, and (6.2) becomes:
-$$\partial_t p_t = -\nabla\cdot(p_t b_t) + \tfrac{g_t^2}{2}\,\Delta p_t \quad \text{— the Fokker-Planck equation (3.7).}$$
+$$\partial_t p_t = -\nabla\cdot(p_t b_t) + \tfrac{g_t^2}{2}\,\Delta p_t \quad \text{— the Fokker-Planck equation (2.7).}$$
 
 For the **CTMC generator**, $(\mathcal{L}_t^* p)(x) = \sum_y p(y)\,R_t(y,x) - p(x)\sum_y R_t(x,y)$, and (6.2) becomes:
-$$\partial_t p_t(x) = \sum_y p_t(y)\,R_t(y, x) \quad \text{— the Kolmogorov forward equation (5.1).}$$
+$$\partial_t p_t(x) = \sum_y p_t(y)\,R_t(y, x) \quad \text{— the Kolmogorov forward equation (7.1).}$$
 
 The message is plain: the continuity equation, the Fokker-Planck equation, and the Kolmogorov forward equation are all the same equation, stated in different coordinate systems for different types of generators. This is not a formal coincidence — it reflects the fact that every Markov process conserves total probability, and equation (6.2) is the expression of that conservation law at the infinitesimal level.
 
@@ -137,7 +137,7 @@ where $\ell_t(x)$ is the **local generator statistic** at state $x$ — the conc
 The minimizer of (6.4) is the parameter $\theta^*$ such that $\mathcal{L}_t^{\theta^*}$ matches the true generator $\mathcal{L}_t$ on the support of $p_t$, at every time $t$.
 
 > [!remark] 6.2
-> The objective (6.4) is intractable as stated, because computing $\ell_t(x_t)$ requires access to the marginal generator — which in turn requires integrating over all data that could produce the observed $x_t$. This is exactly the same intractability that made the original flow matching objective (4.2) intractable: the marginal velocity field $u_t(x)$ is the average over all data points $x_1$ weighted by $p_1(x_1|x_t)$. The resolution is the conditional generator matching theorem.
+> The objective (6.4) is intractable as stated, because computing $\ell_t(x_t)$ requires access to the marginal generator — which in turn requires integrating over all data that could produce the observed $x_t$. This is exactly the same intractability that made the original flow matching objective (3.2) intractable: the marginal velocity field $u_t(x)$ is the average over all data points $x_1$ weighted by $p_1(x_1|x_t)$. The resolution is the conditional generator matching theorem.
 
 
 ## 6.6 The Conditional Generator Matching Theorem
@@ -146,7 +146,7 @@ The key observation is that the marginal generator statistic is a conditional ex
 
 $$\ell_t(x) = \mathbb{E}_{p_1(x_1 \mid x_t = x)}\!\left[\ell_t(x \mid x_1)\right],$$
 
-where $\ell_t(x|x_1)$ is the conditional generator statistic of the path $p_t(\cdot|x_1)$. For the linear interpolant, this is $u_t(x_t|x_1) = (x_1-x_t)/(1-t)$; for the masking interpolant, it is the rate row from (5.3). In every case, the conditional target is computable from first principles, without marginalizing over data.
+where $\ell_t(x|x_1)$ is the conditional generator statistic of the path $p_t(\cdot|x_1)$. For the linear interpolant, this is $u_t(x_t|x_1) = (x_1-x_t)/(1-t)$; for the masking interpolant, it is the rate row from (7.3). In every case, the conditional target is computable from first principles, without marginalizing over data.
 
 Define the **conditional generator matching objective**:
 
@@ -168,7 +168,7 @@ $$\mathbb{E}_{x_1 | x_t}\!\left[D_\phi\!\left(\ell_t(x_t|x_1) \;\Big\|\; \ell_t^
 
 Integrating over $t$ and $x_t$ and differentiating in $\theta$ annihilates the second term, leaving $\nabla_\theta\,\mathcal{L}_\mathrm{GM} = \nabla_\theta\,\mathcal{L}_\mathrm{CGM}$.
 
-This proof is four lines. It holds for any Bregman divergence, any state space, any generator class, any interpolant family. Every conditional-equals-marginal equivalence from every preceding chapter is an instance of it. The CFM = FM proof of Chapter 4 was the special case of squared-norm Bregman divergence applied to ODE generators on $\mathbb{R}^d$. The discrete case from Section 5.3 was the same proof applied to CTMC generators on a finite alphabet. What changes is the state space and the divergence. What does not change is the theorem.
+This proof is four lines. It holds for any Bregman divergence, any state space, any generator class, any interpolant family. Every conditional-equals-marginal equivalence from every preceding chapter is an instance of it. The CFM = FM proof of Chapter 3 was the special case of squared-norm Bregman divergence applied to ODE generators on $\mathbb{R}^d$. The discrete case from Section 7.3 is the same proof applied to CTMC generators on a finite alphabet. What changes is the state space and the divergence. What does not change is the theorem.
 
 ## 6.7 Flow Matching as Generator Matching
 
@@ -182,7 +182,7 @@ The local generator statistic is $\ell_t(x) = u_t(x)$, the velocity vector. Subs
 
 $$\mathcal{L}_\mathrm{CGM}(\theta) = \int_0^1 \mathbb{E}_{t,\, x_1,\, x_t|x_1}\!\left[\tfrac{1}{2}\left\|u_t^\theta(x_t) - u_t(x_t|x_1)\right\|^2\right] dt = \mathcal{L}_\mathrm{CFM}(\theta).$$
 
-The conditional flow matching objective of Chapter 4 is exactly generator matching with an ODE generator and squared-norm Bregman divergence. Similarly, **Riemannian flow matching** is generator matching on $(\mathcal{M}, g)$ with a Riemannian-flow generator and the Riemannian squared norm $\|\cdot\|_g^2$ as the Bregman divergence — the geodesic $\log_{x_t}(x_1)/(1-t)$ is the conditional generator statistic of the geodesic interpolant (5.4).
+The conditional flow matching objective of Chapter 3 is exactly generator matching with an ODE generator and squared-norm Bregman divergence. Similarly, **Riemannian flow matching** is generator matching on $(\mathcal{M}, g)$ with a Riemannian-flow generator and the Riemannian squared norm $\|\cdot\|_g^2$ as the Bregman divergence — the geodesic $\log_{x_t}(x_1)/(1-t)$ is the conditional generator statistic of the geodesic interpolant (7.5).
 
 ## 6.8 Diffusion as Generator Matching
 
@@ -194,7 +194,7 @@ Restricting to models that share the fixed diffusion coefficient $g_t$ and vary 
 
 $$\mathcal{L}_\mathrm{GM}(\theta) \;\propto\; \int_0^1 g_t^2\;\mathbb{E}\!\left[\left\|s_t^\theta(x_t) - \nabla\log p_t(x_t)\right\|^2\right] dt.$$
 
-This is **likelihood-weighted denoising score matching** (Kingma et al., 2021). With Gaussian conditional paths and Tweedie's formula, the score $\nabla\log p_t(x_t|x_1)$ is the Gaussian score $-(x_t - \mu_t x_1)/\sigma_t^2$, and the objective becomes the DDPM noise-prediction loss of Chapter 3. Generator matching with a diffusive generator and squared-norm Bregman divergence recovers the full family of score-based diffusion objectives.
+This is **likelihood-weighted denoising score matching** (Kingma et al., 2021). With Gaussian conditional paths and Tweedie's formula, the score $\nabla\log p_t(x_t|x_1)$ is the Gaussian score $-(x_t - \mu_t x_1)/\sigma_t^2$, and the objective becomes the DDPM noise-prediction loss of Chapter 2. Generator matching with a diffusive generator and squared-norm Bregman divergence recovers the full family of score-based diffusion objectives.
 
 > [!remark] 6.3
 > The diffusion case shows that the choice of Bregman divergence is not merely aesthetic. The score function $\nabla\log p_t$ is a logarithmic derivative — it measures *relative* changes in density, not absolute ones. Using the squared Euclidean norm treats it as a plain vector, ignoring its probabilistic origin. A Bregman divergence derived from an entropic potential $\phi$ would be sensitive to ratios rather than differences, yielding a different loss. The freedom to choose $D_\phi$ within the generator matching framework makes this choice explicit and principled, rather than buried in a reparametrization.
@@ -208,13 +208,13 @@ The discrete case makes the role of the Bregman divergence most transparent. Cho
 - **Local generator statistic**: $\ell_t(x) = R_t(x, \cdot)$, the row of outgoing rates.
 - **Bregman divergence**: KL divergence, $D_{\text{KL}}(a\|b) = \sum_y a(y)\log(a(y)/b(y))$.
 
-With the masking interpolant, the conditional generator statistic at state $\text{[M]}$ given target $x_1$ is the point-mass row $R_t(\text{[M]},\cdot|x_1) = \frac{1}{1-t}\delta_{\cdot,\, x_1}$ from equation (5.3). The KL divergence between this point mass and the model's predicted rate row is:
+With the masking interpolant, the conditional generator statistic at state $\text{[M]}$ given target $x_1$ is the point-mass row $R_t(\text{[M]},\cdot|x_1) = \frac{1}{1-t}\delta_{\cdot,\, x_1}$ from equation (7.3). The KL divergence between this point mass and the model's predicted rate row is:
 
 $$D_{\text{KL}}\!\left(R_t(\text{[M]}, \cdot \mid x_1) \;\Big\|\; R_t^\theta(\text{[M]}, \cdot)\right) = -\log R_t^\theta(\text{[M]}, x_1) + \text{const},$$
 
 which is the **cross-entropy** of the model's next-token distribution against the true token $x_1$. Training with the KL Bregman divergence turns generator matching into maximum-likelihood estimation over categorical predictions — masked language model training, with time-dependent weighting by $1/(1-t)$.
 
-The KL divergence is the natural choice for discrete generator outputs for a deeper reason: the rate matrix row $R_t(x, \cdot)$ is a measure over next states, and the appropriate divergence between measures is information-theoretic. Using the squared $\ell^2$ norm on rate rows — as the discrete CFM objective of Section 5.3 does — is technically valid (it corresponds to a different Bregman divergence) but ignores the probabilistic structure of the output. The KL version is the one that connects naturally to the standard cross-entropy training of language models.
+The KL divergence is the natural choice for discrete generator outputs for a deeper reason: the rate matrix row $R_t(x, \cdot)$ is a measure over next states, and the appropriate divergence between measures is information-theoretic. Using the squared $\ell^2$ norm on rate rows — as the discrete CFM objective of Section 7.3 does — is technically valid (it corresponds to a different Bregman divergence) but ignores the probabilistic structure of the output. The KL version is the one that connects naturally to the standard cross-entropy training of language models.
 
 ## 6.10 The Design Space: A Unified Recipe
 
@@ -240,7 +240,7 @@ The generator matching framework as presented here is due to **Holderrieth, Yim,
 
 The framework has been extended in several directions since. The **stochastic interpolant** perspective of Albergo, Boffi, and Vanden-Eijnden (2023) fits seamlessly: adding noise to the interpolant corresponds to switching from a deterministic ODE generator to a diffusive one, with the Bregman objective unchanged. **Riemannian diffusions** — SDEs on manifolds — arise when the CTMC case is replaced by a manifold-adapted diffusion generator; the score function becomes the Riemannian gradient of the log-density, and Riemannian denoising score matching follows automatically from Theorem 6.1. The unification is not just formal: knowing that all these methods are generator matching has guided the design of new ones, by making clear which ingredients can be varied independently.
 
-The most consequential open direction, at the time of writing, is **joint generation on product spaces** — the subject of Chapter 7. Most real scientific data is heterogeneous: a protein is simultaneously a sequence over a twenty-letter alphabet and a structure in $SE(3)^N$; a small molecule is simultaneously a graph of atom types and a set of three-dimensional coordinates; a genomic locus is simultaneously a DNA sequence and an epigenetic state vector. The relevant state space is a Cartesian product $\mathcal{A}^L \times SE(3)^N$ — combining a discrete factor and a Riemannian factor. The generator decomposes over the product; the Bregman divergence factorizes; Theorem 6.1 continues to hold. But the design choices for the two factors interact in non-trivial ways, and the coordination between discrete and continuous generation during inference is a fresh problem. Chapter 7 develops the product-space theory and its application to the joint generation of protein sequence and structure — arguably the central problem in computational structural biology.
+Chapter 7 develops the two non-Euclidean instantiations in full: discrete flow matching on finite alphabets and Riemannian flow matching on curved manifolds. Both are special cases of Theorem 6.1, and both have the same four-choice structure — what changes is the state space, the interpolant, the generator class, and the Bregman divergence.
 
 ## 6.12 Historical Notes on the Bregman Connection
 
