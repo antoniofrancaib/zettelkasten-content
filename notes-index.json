@@ -1,0 +1,20 @@
+[
+  {
+    "id": "conviction",
+    "date": "Thu, 6 Feb",
+    "excerpt": "There's something devastating about a man who fights without conviction.",
+    "file": "conviction.md"
+  },
+  {
+    "id": "future",
+    "date": "Wed, 11 Dec",
+    "excerpt": "My take on a @dcurtis blog post of the same title and topic.",
+    "file": "future.md"
+  },
+  {
+    "id": "about",
+    "date": "Thu, 23 Oct",
+    "excerpt": "A few glimpses of who I am, what I like, and what you can expect from an interaction with me.",
+    "file": "about.md"
+  }
+]
